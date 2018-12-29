@@ -90,7 +90,31 @@ h3{
     display:flex;
 }
 
+.left-about{
+    width:30%;
+}
+
 .right-about{
-    width:50%;
-    background-color:orangered;
+    width:70%;
+    background-color:rgb(234, 192, 66);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about-text{
+    width: 40%;
+    padding-right: 110px;
+}
+
+#about-img{
+    position: absolute;
+    height: 80%;
+    width: 65%;
+    vertical-align: middle;
+}
+
+.vert-cent{
+    display: flex;
+    align-items: center;
 }
