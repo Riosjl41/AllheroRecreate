@@ -102,7 +102,7 @@ h3{
     align-items: center;
 }
 
-.about-text{
+.about-cont{
     width: 40%;
     padding-right: 110px;
 }
@@ -117,4 +117,15 @@ h3{
 .vert-cent{
     display: flex;
     align-items: center;
+}
+
+#about_btn{
+    background-color:white;
+    color:rgb(234, 192, 66);
+    border:none;
+    text-align: center;
+    padding: 20px 40px;
+    font-weight: bolder;
+    box-shadow: 7px 7px 5px #484848;
+    margin-top: 50px;
 }
