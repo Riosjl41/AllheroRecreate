@@ -8,9 +8,9 @@
 }
 
 body{
-    background-color: black;
     color: white;
     font-family: 'Staatliches', cursive;
+    background-color: #000;
 }
 
 .nav {
@@ -20,6 +20,7 @@ body{
     margin: 30px 0;
     position: fixed;
     top:0;
+    color:black;
 }
 
 li {
@@ -30,17 +31,30 @@ li {
     display: flex;
 }
 
-#slide-1{
-    width: 50%;
-    height: 100%;
-}
+.right-slide {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width:50%;
+ }
+ .left-slide {
+     width:50%;
+  }
+ 
+  #slide-1{
+     height: 100%;
+     width:100%;
+ }
+ 
+ #slide-2{
+     height: 80%;
+     width: 100%;
+ }
 
-#slide-2{
-    height: 80%;
-}
+
 
 .slogan {
-    background-image: url("images/black-color-dark-1171480.jpg");
+    background-image: url("images/black-and-white-dark-marble-908283.jpg");
     background-size:cover;
     height: 100vh;
 
@@ -65,15 +79,18 @@ h3{
     font-size: 30px;
 }
 
-#right-slide {
-   display: flex;
-   flex-direction: column;
-   width: 50%;
-   background-color: white;
-}
-
 #service-title {
     color: black;
     text-align:center;
     padding-top: 50px;
+}
+
+.about{
+    height: 100vh;
+    display:flex;
+}
+
+.right-about{
+    width:50%;
+    background-color:orangered;
 }
