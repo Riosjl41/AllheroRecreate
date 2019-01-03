@@ -14,13 +14,15 @@ body{
 }
 
 .nav {
+    display:flex;
     list-style: none;
-    display: flex;
-    margin: 30px 0;
+    margin: 30px 0 0 10px;
     position: fixed;
+    right: 0px;
     top:0;
     color:black;
-    background-color:pink;
+    justify-content: flex-end;
+    z-index: 12342151234;
 }
 
 .nav__li{
