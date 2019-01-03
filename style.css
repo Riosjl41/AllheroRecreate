@@ -9,14 +9,14 @@
 
 body{
     color: black;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches', serif, cursive;
     background-color: #252525;
 }
 
 
 
 
-.nav {
+.nav{
     display:flex;
     list-style: none;
     margin: 30px 0 0 10px;
@@ -27,24 +27,33 @@ body{
     z-index: 12342151234;
     font-weight: bolder;
     color:#C00000;
-    ;
 }
 
 .nav__li{
     margin-right: 30px;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    color:#C00000;
+}
 
 
-
-.slideshow {
+#home {
     display: flex;
 }
 
 .right-slide {
     display: flex;
     flex-direction: column;
-    background-color:white;
+    background-color:#FFFFFF;
     width:50%;
  }
  .left-slide {
@@ -64,7 +73,7 @@ body{
 
 
 
-.slogan {
+#slogan {
     background-image: url("images/black-and-white-dark-marble-908283.jpg");
     background-size:cover;
     height: 100vh;
@@ -100,7 +109,7 @@ h3{
 
 
 
-.about{
+#about{
     height: 100vh;
     display:flex;
 }
@@ -157,7 +166,7 @@ h3{
 
 
 
-.services{
+#services{
     display:flex;
     color:white;
 }
@@ -202,8 +211,8 @@ h3{
 
 
 
-.career {
-    background-color: white;
+#career {
+    background-color: #FFFFFF;
     height: 100vh;
     display:flex;
 }
@@ -239,7 +248,7 @@ h3{
 
 
 
-.advert{
+#advert{
     background-color:rgb(234, 192, 66);
     height: 100vh;
     display: flex;
@@ -264,8 +273,7 @@ h3{
 
 
 .news{
-    display:grid;
-
+    
 }
 
 .card {
@@ -274,8 +282,9 @@ h3{
     transition: 0.3s;
   }
 
-  .container {
-      background-color: white;
+.container {
+      background-color: #FFFFFF;
       color:black;
       padding: 2px 16px;
-  }
+}
+

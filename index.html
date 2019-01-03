@@ -5,24 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AllHero</title>
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
             <nav>
-                <ul class='nav'>
-                        <li class='nav__li'>ABOUT</li>
-                        <li class='nav__li'>SERVICE</li>
-                        <li class='nav__li'>WORKS</li>
-                        <li class='nav__li'>COMPANY</li>
-                        <li class='nav__li'>CAREER</li>
+                <ul class='nav animated slideInRight delay-.35s'>
+                        <li class='nav__li'><a href="#home">Home</a></li>
+                        <li class='nav__li'><a href="#slogan">Slogan</a></li>
+                        <li class='nav__li'><a href="#about">About</a></li>
+                        <li class='nav__li'><a href="#services">Services</a></li>
+                        <li class='nav__li'><a href="#career">Career</a></li>
+                        <li class='nav__li'><a href="#advert">Adverts</a></li>
                         <li class='nav__li'>NEWS</li>
-                        <li class='nav__li'>CONTACT</li>
                 </ul>
             </nav>
     </header>
 
     <main>
-        <section class='slideshow'>
+        <section id='home'>
             <div class="left-slide">
                     <img src='images/architecture-building-city-1123982.jpg' alt='corner building' id='slide-1'>
             </div>
@@ -31,8 +33,9 @@
                 <h3 id='service-title'>Loren Ipsum</h3>
              </div>  
         </section>
-        <section class="slogan">
-            <div class='center'>
+
+        <section id="slogan">
+            <div class='center animated slideInLeft'>
                 <h1>Loren Ipsum</h1>
                 <h3>Mauris quis vestibulum est.</h3>
                 <br>
@@ -45,7 +48,8 @@
                 </p>
             </div>
         </section>
-        <section class="about">
+
+        <section id="about">
             <div class='vert-cent'>
                 <img src='images/architect-architecture-black-and-white-911758.jpg' id='about-img'>
             </div>
@@ -66,7 +70,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section id="services">
             <div class="left-serv">
                 <img src="images/architecture-building-chicago-1662159.jpg" alt="chicago buildings" class='serv-img'>
                 <div class='serv-text'>
@@ -99,7 +103,7 @@
             </div>
         </section>
 
-        <section class="career">
+        <section id="career">
             <div class="left-career">
                 <h1 class="career__txt">
                     Magna sit amet purus 
@@ -115,28 +119,28 @@
             </div>
         </section>
 
-        <section class="advert">
-            <ul class="ul__advert">
+        <section id="advert">
+            <ul class="ul__advert animated rollIn delay-5s">
                 <li class='li__advert'><img src="https://img.icons8.com/ios/50/000000/reddit-filled.png"></li>
                 <li class='li__advert'><img src="https://img.icons8.com/ios/50/000000/digg-filled.png"></li>
                 <li class='li__advert'><img src="https://img.icons8.com/ios/50/000000/medium-logo-filled.png"></li>
             </ul>
-            <ul class="ul__advert">
+            <ul class="ul__advert animated rollIn delay-4s">
                 <li class='li__advert'><img src="https://img.icons8.com/ios/50/000000/linkedin-filled.png"></li>
                 <li class='li__advert'><img src="https://img.icons8.com/ios/50/000000/pinterest-filled.png"></li>
                 <li class='li__advert'><img src="https://img.icons8.com/ios/50/000000/dribbble-filled.png"></li>
                 </ul>
-            <ul class="ul__advert">
+            <ul class="ul__advert animated rollIn delay-3s">
                 <li class='li__advert'><img src="https://img.icons8.com/ios/50/000000/renren-filled.png"></li>
                 <li class='li__advert'><img src="https://img.icons8.com/ios/50/000000/wordpress-filled.png"></li>
                 <li class='li__advert'><img src="https://img.icons8.com/ios/50/000000/tumblr-filled.png"></li>
             </ul>
-            <ul class="ul__advert">
+            <ul class="ul__advert animated rollIn delay-2s">
                 <li class='li__advert'><img src="https://img.icons8.com/ios/50/000000/github-2-filled.png"></li>
                 <li class='li__advert'><img src="https://img.icons8.com/ios/50/000000/github-filled.png"></li>
                 <li class='li__advert'><img src="https://img.icons8.com/ios/50/000000/stackoverflow-filled.png"></li>
             </ul>
-            <ul class="ul__advert" id='diff__advert'>
+            <ul class="ul__advert animated rollIn" id='diff__advert'>
                 <li class='li__advert'><img src="https://img.icons8.com/ios/50/000000/instagram-filled.png"></li>
                 <li class='li__advert'><img src="https://img.icons8.com/ios/50/000000/myspace-squared-filled.png"></li>
                 </ul>
@@ -152,6 +156,5 @@
                 </div>
         </section>
     </main>
-    <link rel="stylesheet" type="text/css" href="style.css">
 </body>
 </html>
