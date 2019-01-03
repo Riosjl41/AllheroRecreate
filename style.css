@@ -10,8 +10,11 @@
 body{
     color: black;
     font-family: 'Staatliches', cursive;
-    background-color: #000;
+    background-color: #252525;
 }
+
+
+
 
 .nav {
     display:flex;
@@ -20,14 +23,18 @@ body{
     position: fixed;
     right: 0px;
     top:0;
-    color:black;
     justify-content: flex-end;
     z-index: 12342151234;
+    font-weight: bolder;
+    color:#C00000;
+    ;
 }
 
 .nav__li{
     margin-right: 30px;
 }
+
+
 
 
 .slideshow {
@@ -37,7 +44,7 @@ body{
 .right-slide {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color:white;
     width:50%;
  }
  .left-slide {
@@ -53,6 +60,7 @@ body{
      height: 80%;
      width: 100%;
  }
+
 
 
 
@@ -88,6 +96,9 @@ h3{
     text-align:center;
     padding-top: 50px;
 }
+
+
+
 
 .about{
     height: 100vh;
@@ -130,12 +141,21 @@ h3{
     font-weight: bolder;
     box-shadow: 7px 7px 5px #484848;
     margin-top: 50px;
+    cursor: pointer;
 }
+
+.btn:hover{
+    transform: translateY(4px);
+}
+
 
 #about__btn{
     background-color:white;
     color:rgb(234, 192, 66);
 }
+
+
+
 
 .services{
     display:flex;
@@ -171,9 +191,16 @@ h3{
     opacity: .35;
 }
 
+.serv-img:hover{
+    opacity:.65;
+}
+
 .serv__h3{
     font-size: 50px;
 }
+
+
+
 
 .career {
     background-color: white;
@@ -209,6 +236,9 @@ h3{
     background-color:rgb(234, 192, 66);
 }
 
+
+
+
 .advert{
     background-color:rgb(234, 192, 66);
     height: 100vh;
@@ -232,3 +262,20 @@ h3{
 
 
 
+
+.news{
+    display:grid;
+
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  .container {
+      background-color: white;
+      color:black;
+      padding: 2px 16px;
+  }
