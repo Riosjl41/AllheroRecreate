@@ -16,16 +16,17 @@ body{
 .nav {
     list-style: none;
     display: flex;
-    justify-content: flex-start;
     margin: 30px 0;
     position: fixed;
     top:0;
     color:black;
+    background-color:pink;
 }
 
-li {
+.nav__li{
     margin-right: 30px;
 }
+
 
 .slideshow {
     display: flex;
@@ -120,15 +121,18 @@ h3{
     align-items: center;
 }
 
-#about_btn{
-    background-color:white;
-    color:rgb(234, 192, 66);
+.btn{
     border:none;
     text-align: center;
     padding: 28px 60px;
     font-weight: bolder;
     box-shadow: 7px 7px 5px #484848;
     margin-top: 50px;
+}
+
+#about__btn{
+    background-color:white;
+    color:rgb(234, 192, 66);
 }
 
 .services{
@@ -168,4 +172,61 @@ h3{
 .serv__h3{
     font-size: 50px;
 }
+
+.career {
+    background-color: white;
+    height: 100vh;
+    display:flex;
+}
+
+.left-career{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}
+
+.right-career{
+    width:50%;
+}
+
+.career__img {
+    height:100%;
+    width:100%;
+}
+
+.career__txt{
+   width:50%;
+   display:flex;
+   justify-content: center;
+}
+
+#career__btn{
+    background-color:rgb(234, 192, 66);
+}
+
+.advert{
+    background-color:rgb(234, 192, 66);
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.ul__advert{
+    list-style: none;
+    margin: 100px;
+}
+
+.li__advert{
+    padding-bottom:50px;
+}
+
+#diff__advert{
+    margin-top:inherit;
+}
+
+
 
