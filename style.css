@@ -269,22 +269,36 @@ h3{
     margin-top:inherit;
 }
 
+#advert__title{
+    margin-bottom: 600px;
+}
+
 
 
 
 .news{
-    
+   display:grid;
+   grid-template-columns: repeat(1fr);
+   grid-template-rows: 1fr;
+   grid-template-areas: 
+   "card1 card1 card2 card3";
 }
 
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+
+  .card__pic{
+    border-radius: 5px 5px 0 0;
   }
 
 .container {
       background-color: #FFFFFF;
       color:black;
       padding: 2px 16px;
+      width: 30%;
 }
 
