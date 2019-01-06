@@ -330,6 +330,15 @@ h3{
         display: block;
     }
 
+    .nav{
+        display:block;
+        font-size:10px;
+    }
+
+    .nav__li{
+        margin-right: 5px;
+    }
+
     .right-slide {
         display: block;
         background-color:#FFFFFF;
@@ -444,6 +453,10 @@ h3{
 @media screen and (min-width: 600px) and (max-width:899px){
     #home{
         display:block;
+    }
+
+    .nav{
+        padding-right:100px;
     }
 
     .right-slide {
