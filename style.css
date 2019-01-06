@@ -47,6 +47,8 @@ a:visited{
 }
 
 
+
+
 #home {
     display: flex;
 }
@@ -75,7 +77,7 @@ a:visited{
 
 
 
-#slogan {
+ #slogan {
     background-image: url("images/black-and-white-dark-marble-908283.jpg");
     background-size:cover;
     height: 100vh;
@@ -134,16 +136,13 @@ h3{
 }
 
 #about-img{
-    position: absolute;
     height: 80%;
     width: 65%;
-    vertical-align: middle;
+    position: absolute;
+    margin-top:75px;
 }
 
-.vert-cent{
-    display: flex;
-    align-items: center;
-}
+
 
 .btn{
     border:none;
@@ -252,9 +251,15 @@ h3{
 
 #advert{
     background-color:rgb(234, 192, 66);
-    height: 100vh;
+    height: 100vh;    
     display: flex;
-    align-items:center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#advert__container{
+    display:flex;
     justify-content: center;
 }
 
@@ -267,12 +272,9 @@ h3{
     padding-bottom:50px;
 }
 
-#diff__advert{
-    margin-top:inherit;
-}
-
 #advert__title{
-    margin-bottom: 600px;
+    position:absolute;
+    top:20px;
 }
 
 
@@ -280,7 +282,7 @@ h3{
 
 #news{
    display:grid;
-   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
    grid-gap: 1rem;
 }
 
@@ -311,7 +313,19 @@ h3{
 
 /*Media Queries*/
 
-@media screen and (max-width: 599px) { 
+@media screen and (min-width: 250px) and (max-width: 599px) { 
+    h1{
+        font-size:30px;
+    }
+  
+    h3{
+        font-size: 15px;
+    }
+  
+    p{
+        font-size:8px;
+    }
+
     #home {
         display: block;
     }
@@ -320,61 +334,163 @@ h3{
         display: block;
         background-color:#FFFFFF;
         width:100%;
-     }
+    }
+
      .left-slide {
          width:100%;
-      }
+    }
+
+    #slogan{
+        padding-right:0px;
+    }
+
+    #about{
+        height: 100vh;
+        display:flex;
+    }
+    
+    .left-about{
+        display:none;
+    }
+    
+    .right-about{
+        width:100%;
+        justify-content: center;
+    }
+    
+    .about-cont{
+        width: 70%;
+        padding-right: 0px;
+    }
+    
+    #about-img{
+        display:none;
+    }
+
+    
+    #services{
+        display:flex;
+        flex-direction: column;
+        color:white;
+    }
+    .left-serv{
+        width:100%;
+    }
+
+    .mid-serv{
+        width:100%;
+    }
+
+    .right-serv{
+        width:100%;
+    }
+        
+    .left-career{
+        width:100%;
+        background-image: url('images/architecture-buildings-business-730753.jpg');
+        background-size: cover;
+        color:white;
+    }
+    
+    .right-career{
+        display:none;
+    }
+
+    .career__txt{
+        width:100%;
+        background-color:rgba(0, 0, 0, 0.5);;
+     }
+
+     #advert{
+         position: relative;
+     }
+
+     .ul__advert{
+        margin: 5px;
+        margin-left:20px;
+    }
+    
+    .li__advert{
+        margin-top:0px;
+        margin-left: 0px;
+    }
+    
+    #advert__title{
+        margin-left: 0px;
+        position: absolute;
+        top:20px;
+    }   
+    
+    #diff__advert{
+        display:none;
+    }
+
+    #news{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     }
      
-    .nav{
+     .card {
+         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+         border-radius: 5px; 
+     }
+     
+     
+     #card1{
+         grid-column: span 1;
+         grid-row: span 1;
+     }
+
+}
+@media screen and (min-width: 600px) and (max-width:899px){
+    #home{
         display:block;
     }
 
-    #slogan {
+    .right-slide {
+        width:100%;
+    }
+
+    .left-slide {
+         width:100%;
+    }
+
+    #slogan{
         padding-right:0px;
     }
 
     .center {
         width: 80%;
     }
-
-    h1{
-        font-size: 60px;
-    }
-    h3{
-        font-size:30px;
-    }
-
-    p{
-        font-size:18px;
+    
+    #about{
+        position: relative;
     }
 
     .left-about{
         display:none;
     }
-
+    
     .right-about{
         width:100%;
-    }
-
-    .about-cont{
-        width: 100%;
-        text-align: center;
         justify-content: center;
-        padding-right: 0px;
     }
-
+    
+    .about-cont{
+        width: 80%;
+        padding-right: 0px;
+        text-align: center;
+        margin-top:380px;
+    }
+    
     #about-img{
-        position: absolute;
         height: 40%;
-        width: 70%;
-        vertical-align: baseline;
-        display:none;
+        width: 100%;
+        position: absolute;
+        margin-top:0px;
     }
 
     #services{
-        display:flex;
         flex-direction: column;
-        color:white;
     }
 
     .left-serv{
@@ -388,17 +504,9 @@ h3{
     .right-serv{
         width:100%;
     }
-
+    
     .serv-text{
-        position: absolute;
-        top: 50vh;
-        left: 10%;
-     }
-
-     #career {
-        background-color: #FFFFFF;
-        height: 100vh;
-        display:flex;
+       left: 25%;
     }
     
     .left-career{
@@ -412,54 +520,137 @@ h3{
         display:none;
     }
     
+    .career__img {
+        display: none;
+    }
+    
     .career__txt{
-       width:100%;
-       background-color:rgba(0, 0, 0, 0.5);;
+       width:50%;
+       display:flex;
+       justify-content: center;
+    }
+    
+    #career__btn{
+        background-color:rgb(234, 192, 66);
     }
 
-    
+    .career__txt{
+        width:100%;
+        background-color:rgba(0, 0, 0, 0.5);;
+    }
+
+    #advert{
+        position: relative;
+    }
+
     .ul__advert{
-        margin: 0px;
-        padding-right:55px;
-        margin-left:-40px;
-    }
+       margin: 50px;
+       margin-left:60px;
+   }
+   
+   .li__advert{
+       margin-top:0px;
+       margin-left: 0px;
+   }
+   
+   #advert__title{
+       margin-left: 0px;
+       position: absolute;
+       top:20px;
+   }   
+   
+   #diff__advert{
+       display:none;
+   }
     
-    .li__advert{
-        margin-top:10px;
-        margin-left: 0px;
-    }
-    
-    #advert__title{
-        margin-left: 10px;
-    }   
-    
-    #diff__advert{
-        display:none;
+
+}
+
+
+
+@media screen and (min-width: 900px) and (max-width:1199px) { 
+    #home {
+        display: flex;
     }
 
+    #services{
+        display:flex;
+        color:white;
+    }
+    .left-serv{
+        position: relative;
+        width:33.333%;
+        height: 100vh;
+    }
+    
+    .mid-serv{
+        position: relative;
+        width:33.333%;
+        height: 100vh;
+    }
+    
+    .right-serv{
+        position: relative;
+        width:33.333%;
+        height: 100vh;
+    }
+    
+    .serv-text{
+       position: absolute;
+       top: 50vh;
+       left: 15.16%;
+    }
+    
+    .serv-img{
+        width:100%;
+        height: 100%;;
+        opacity: .35;
+    }
+    
+    .serv-img:hover{
+        opacity:.65;
+    }
+    
+    .serv__h3{
+        font-size: 50px;
+    }
+
+    .ul__advert{
+        margin: 30px;
+        margin-left:60px;
+    }
+
+    
     #news{
-        grid-template-columns: 1fr;
-        grid-gap: 0;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
      }
 
-     #card1{
-        grid-column: span 1;
+    
+ 
+}
+
+@media screen and (min-width: 1200px) and (max-width:1600px){
+    
+    #about{
+        height: 100vh;
+        display:flex;
     }
     
+    .about-cont{
+        width: 80%;
+        padding-right: 110px;
+    }
+
+    .about-cont{
+        width: 40%;
+        padding-right: 110px;
+    }
+    
+    #news{
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+     }
 }
 
-@media screen and (min-width: 600px) {
 
-}
 
-@media screen and (min-width: 900px) { 
 
- }
-
-@media screen and (min-width: 1200px) {
-
-}
-
-@media screen (min-width: 1800px) {
-
- }
