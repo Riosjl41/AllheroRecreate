@@ -50,33 +50,25 @@ a:visited{
 
 
 #home {
-    display: flex;
+    height: 100vh;
+    background-image: url('images/architecture-black-and-white-buildings-1437493.jpg');
+    background-size: cover;
 }
 
-.right-slide {
-    display: flex;
-    flex-direction: column;
-    background-color:#FFFFFF;
-    width:50%;
- }
- .left-slide {
-     width:50%;
-  }
+.title{
+    font-size: 6rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 25vh;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+
+}
+
+.title2{
+    text-align: center;
+}
+
  
- 
-  #slide-1{
-     height:100%;
-     width:100%;
- }
- 
- #slide-2{
-     height: 80%;
-     width: 100%;
- }
-
-
-
-
  #slogan {
     background-image: url("images/black-and-white-dark-marble-908283.jpg");
     background-size:cover;
@@ -339,16 +331,6 @@ h3{
         margin-right: 5px;
     }
 
-    .right-slide {
-        display: block;
-        background-color:#FFFFFF;
-        width:100%;
-    }
-
-     .left-slide {
-         width:100%;
-    }
-
     #slogan{
         padding-right:0px;
     }
@@ -456,15 +438,12 @@ h3{
     }
 
     .nav{
-        padding-right:100px;
+        display:block;
+        font-size:10px;
     }
 
-    .right-slide {
-        width:100%;
-    }
-
-    .left-slide {
-         width:100%;
+    .nav__li{
+        margin-right: 5px;
     }
 
     #slogan{
@@ -580,9 +559,6 @@ h3{
 }
 
 @media screen and (min-width: 900px) and (max-width:1199px) { 
-    #home {
-        display: flex;
-    }
 
     #services{
         display:flex;
