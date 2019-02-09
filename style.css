@@ -653,6 +653,101 @@ h3{
      }
 }
 
+@media screen and (orientation: landscape)
+and (max-width : 1200px) {
+        h1{
+            font-size: 4rem;
+        }
+
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        #about__btn{
+            padding: 15px 30px;
+        }
+        
+        #about-img {
+            width: 55%;
+        }
+
+        .about-cont{
+            width:60%;
+            padding-right:20px;
+        }
+        .career__img{
+            max-width:100%;
+        }
+
+        #career__btn{
+            padding: 15px 30px;
+        }
+
+        .career__img{
+            width:75%;
+            float:right;
+        }
+    } 
+
+@media screen and (orientation:landscape)
+and (max-width: 990px) {
+    #about-img{    
+        display:none;
+    }
+    .about-cont{
+        margin-top: 30px;
+    }
+
+    #services{
+        background-color:#F5F5F5;
+        color:#000000;
+    }
+
+    .serv-text{
+        top:30%;
+    }
+
+    #services > div{
+        border-bottom: 3px solid black;
+    }
+
+    .serv-img{
+        display:none;
+    }
+
+    #advert__container{
+        padding-top: 100px;
+    }
+}
+
+@media screen and (orientation:landscape)
+and (max-width: 700px) {
+
+    p{
+        font-size:.75rem;
+    }
+
+    h3{
+        font-size:1rem;
+    }
+    #about__btn{
+        margin-top: 5px;
+    }
+
+    .serv-text{
+        top:30%;
+    }
+
+    #advert__container{
+        padding-top: 80px;
+    }
+
+    #advert__title{
+        top:0;
+    }
+}
 
 
 
